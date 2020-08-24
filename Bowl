@@ -1,0 +1,23 @@
+import random
+import os
+import sys
+max = sys.maxsize
+print "\n\nHow many tries will it take to find your number? :)\n\n"
+print "\nUnfortunately this script is not advanced enough to not duplicate numbers,\n therefore it might take longer than necessary, sorry for the inconvenience.\n\n\n Sidenote: The number you choose will also be the highest number the program\n will look for. (E.g if your number is 5, the range is 0 to 5)\n\n\n"
+
+
+
+i = 0
+user = input("Enter the number you would like to find: " )
+number = random.randint(0, user)
+while number != user:
+    i += 1
+    number = random.randint(0, user)
+    print "Number: ", number
+    print "\n"
+    print "Tries",i
+    
+
+
+
+
